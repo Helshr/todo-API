@@ -1,0 +1,242 @@
+
+*{
+  margin:0;
+  padding: 0;
+}
+
+.clear{
+	clear:both;
+}
+h1{
+  color: #cd0000;
+  font:bold 36px ChantelliAntiquaRegular, Verdana, Geneva, sans-serif;
+  letter-spacing: -2px;
+  margin:10px 60px;
+  text-shadow:1px 2px 1px rgba(255,255,255,0.7);
+  margin-top: 50px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+p{
+  font:bold 15px ChantelliAntiquaRegular, Arial, Helvetica, sans-serif;
+  margin-left: 50px
+}
+/**********shoppingList*********/
+
+.list {
+	position:relative;
+	background: #f5f5f5;
+	color: #555;
+	padding: 0 !important;
+	width:480px;
+	font:22px courier, monospace;
+	border: 1px solid #dedede;
+	box-shadow:1px 2px 4px rgba(0,0,0,0.7);
+	float:left;
+	margin:5px;
+}
+.list:before, .paper:after{
+	content: "";
+	height: 100%;
+	width: 100%;
+	background: #f5f5f5;
+	border: 1px solid #dedede;
+	position: absolute;
+	z-index: -1;
+    box-shadow:1px 2px 4px rgba(0,0,0,0.7);
+}
+
+.list:before {
+	top:-10px;
+	right:-10px;
+}
+
+
+.list li {
+	list-style: none;
+	border-bottom: 1px dotted #ccc;
+	text-indent: 25px;
+	height: auto;
+	padding: 10px;
+	text-transform: capitalize;
+}
+.list li:hover {
+	background-color: #f0f0f0;
+	-webkit-transition: all 0.2s;
+	-moz-transition:    all 0.2s;
+	-ms-transition:     all 0.2s;
+	-o-transition:      all 0.2s;
+}
+.lines {
+	border-left: 1px solid #ffaa9f;
+	border-right: 1px solid #ffaa9f;
+	width: 2px;
+	float: left;
+	height: 520px;
+	/*margin-left: 40px;*/
+}
+
+
+.shadow {
+	background: url(/jscss/demoimg/201206/shadow.png);
+	float:left;
+	width: 500px;
+	height: 12px;
+	-webkit-transition:0.6s;
+}
+
+/**********invoice*********/
+.invoice {
+	padding: 0 !important;
+	width: 500px;
+	height:auto;
+	float:left;
+	margin:-50px 0;
+	margin-left:10px;
+}
+
+.content{
+	background:#FDFDFD;
+    background: -webkit-gradient(linear, 0% 0%, 0% 80%, from(#FFF), to(#F2F2F2));
+    background: -moz-linear-gradient(#FFF,#F2F2F2 80%);
+	color:#333;
+	width:500px;
+	padding:20px 0 10px;
+	float:left;
+	border: 1px solid #dedede;
+	-webkit-transition:all 0.4s;
+	-moz-transition:all 0.4s;
+	-ms-transition:all 0.4s;
+	-o-transition:all 0.4s;
+	box-shadow:1px 2px 4px rgba(0,0,0,0.7);
+
+}
+
+.content:hover{
+	border-bottom-right-radius:140px 30px;
+	box-shadow:6px 6px 6px rgba(0,0,0,0.7);
+}
+
+.invoice p{
+	font:bold 16px courier, monospace;
+	/*text-align:center;*/
+	line-height:20px;
+	margin:6px 0;
+}
+.title{
+	font-size:18px;
+}
+
+.line{
+	width:440px;
+	margin:0 30px;
+	height:40px;
+	font:bold 14px courier, monospace;
+	line-height:50px;
+	border-bottom:1px dashed #333;
+}
+
+.listTitle{
+	margin-top:10px;
+	text-align:left;
+	font:22px Arial, Helvetica, sans-serif;
+	text-indent:50px;
+	word-spacing:12px;
+}
+
+.voiceList{
+	width:380px;
+	height:20px;
+	margin:6px auto;
+	font:bold 15px Arial, Helvetica, sans-serif;
+	line-height:20px;
+}
+
+.tittle {
+  text-align: center;
+}
+
+.right{
+	float:right;
+  margin-top: 5px;
+}
+
+.footer{
+	width:370px;
+	margin:0 60px;
+	height:auto;
+	min-height:4px;
+	/*border-top:1px dashed #333;*/
+}
+
+.footer p{
+	text-align:left;
+	line-height:20px;
+	margin-top:6px;
+}
+button {
+  	border: 1px solid black;
+	width: 55px;
+	margin-left: 5px;
+	border-radius: 0.2em;
+	background-color: #f5f5f5;
+}
+.todo-done {
+  width:18px;
+  height:18px;
+  /*background: url(images/check0.SVG);*/
+}
+
+.todo-content {
+  border-bottom: 1px dashed #333;
+  text-align: null
+}
+
+.done {
+  color:gray;
+  text-decoration:line-through;
+}
+
+.todo-form {
+  display: inline-block;
+}
+
+.delete {
+  float: right;
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+  margin-top: 6px;
+}
+
+#id-button-todo {
+    width:20px;
+    height:20px;
+    margin-top: 3px;
+}
+
+input#id-input-todo {
+    border: 1px solid #AAC;
+    height: 22px;
+    margin-top: 5px;
+    margin-left: 57px;
+}
+
+.todo-time {
+    float: right;
+    margin-right: 25px;
+    margin-top: 8px;
+    font:bold 15px ChantelliAntiquaRegular, Verdana, Geneva, sans-serif;
+}
+
+#id-button-todo {
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+    POSITION: absolute;
+    margin-top: -22px;
+    margin-left: 205px;
+}
